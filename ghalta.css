@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Beleren;
+    src: url(/home/joe/repos/restaurant-page/src/typeface-beleren-bold-master/Beleren2016-Bold.woff);
+  }
+
+* {
+    font-family: Beleren;
+}
+
+body {
+    background-image: url("/home/joe/repos/restaurant-page/src/stockvault-subtle-green-grunge-background237994.jpg");
+    display: grid;
+    justify-content: center;
+
+    padding-top: 10%;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    height: 500px;
+    width: 700px;
+    border: 20px solid black; 
+    border-radius: 40px;
+
+    border-radius: 40px;
+}
+
+#heroImg {
+    width: 350px;
+}
+
+#resHeader {
+    font-size: 2rem;
+}
+
+#resDesc {
+    padding: 10px;
+}
