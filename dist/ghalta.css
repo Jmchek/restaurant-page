@@ -8,23 +8,26 @@
 }
 
 body {
-    background-image: url("/home/joe/repos/restaurant-page/src/stockvault-subtle-green-grunge-background237994.jpg");
+    background-color: rgb(172, 172, 172);
     display: grid;
     justify-content: center;
+    align-items: center;
 
-    padding-top: 10%;
+    
     margin: 0;
     height: 100vh;
     width: 100vw;
 }
 
 #content {
+    background-color: rgba(11, 94, 11, 0.445);
     display: grid;
     justify-content: center;
     align-items: center;
     justify-items: center;
+    grid-template-rows: 100px 500px 1fr;
 
-    height: 500px;
+    height: 1000px;
     width: 700px;
     border: 20px solid black; 
     border-radius: 40px;
@@ -33,13 +36,29 @@ body {
 }
 
 #heroImg {
-    width: 350px;
+    width: 90%;
+    height: 100%;
+    border: .5px black solid;
 }
 
 #resHeader {
-    font-size: 2rem;
+    background-image: url("/home/joe/repos/restaurant-page/src/stockvault-subtle-green-grunge-background237994.jpg");
+    border: .5px black solid;
+    border-radius: 15px;
+    font-size: 3rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(56, 128, 56);
 }
 
 #resDesc {
-    padding: 10px;
+    background-image: url("/home/joe/repos/restaurant-page/src/stockvault-subtle-green-grunge-background237994.jpg");
+    display: flex;
+
+    align-items: center;
+
+    width: 90%;
+    height: 300px;
 }
