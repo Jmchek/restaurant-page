@@ -59,6 +59,12 @@ body {
 
     align-items: center;
 
-    width: 90%;
+    max-width: 90%;
     height: 300px;
+
+    font-size: 1.3rem;
+}
+
+#resDesc > p {
+    padding: 10px;
 }
