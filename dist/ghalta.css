@@ -1,6 +1,6 @@
 @font-face {
     font-family: Beleren;
-    src: url(/home/joe/repos/restaurant-page/src/typeface-beleren-bold-master/Beleren2016-Bold.woff);
+    src: url(/home/joe/repos/restaurant-page/src/typeface-beleren-bold-master/Beleren2016-Bold.woff) format('woff2');
   }
 
 * {
