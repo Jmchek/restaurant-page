@@ -8,7 +8,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Ghalta's Primal Hunger",
+      title: 'Ghalta\'s Primal Hunger',
     }),
   ],
   output: {
