@@ -1,6 +1,8 @@
 import _ from 'lodash';
 import './ghalta.css';
-import printMe from './print.js';
+import loadMe from './page-load.js';
+// import contentGrbbr from './page-load.js';
+// import './page-load.js';
 
  function component() {
    const element = document.createElement('div');
@@ -9,7 +11,7 @@ import printMe from './print.js';
    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
   btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
+  btn.onclick = loadMe;
 
   element.appendChild(btn);
 
@@ -17,3 +19,8 @@ import printMe from './print.js';
  }
 
  document.body.appendChild(component());
+
+ const contentGrbbr = document.querySelector('.content');
+
+ console.log(contentGrbbr);
+
