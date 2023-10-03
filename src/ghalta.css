@@ -31,8 +31,6 @@ body {
     width: 700px;
     border: 20px solid black; 
     border-radius: 40px;
-
-    border-radius: 40px;
 }
 
 #heroImg {
@@ -46,7 +44,7 @@ body {
     border: .5px black solid;
     border-radius: 15px;
     font-size: 3rem;
-    width: 90%;
+    width: 630px;
     display: flex;
     justify-content: center;
 
@@ -67,4 +65,35 @@ body {
 
 #resDesc > p {
     padding: 10px;
+}
+
+
+/* Tab 2 */
+
+.menuItems {
+    display: grid;
+    width: 90%;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.menuItems > p {
+    background-image: url("/home/joe/repos/restaurant-page/src/stockvault-subtle-green-grunge-background237994.jpg");
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+
+    margin: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.menuItems > img {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 15px;
+
 }

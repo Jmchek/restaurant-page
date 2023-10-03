@@ -1,22 +1,28 @@
 export default function menuTab() {
     const contentGrbbr = document.querySelector('#content');
-    const resHeaderCrtr = document.createElement('h2');
-    const heroImgCrtr = document.createElement('img');
-    const resDescCrtr = document.createElement('div');
-    const paraResDescCrtr = document.createElement('p');
+    const menuHeaderCrtr = document.createElement('h2');
+    const menuArrCrtr = [];
 
-    resHeaderCrtr.id = "resHeader";
-    resHeaderCrtr.innerText = "Ghalta's Primal Hunger";
+    menuHeaderCrtr.id = "resHeader";
+    menuHeaderCrtr.innerText = "Menu";
 
-    heroImgCrtr.id = "heroImg";
-    heroImgCrtr.src = "/home/joe/repos/restaurant-page/src/Ghalta.jpg";
+    contentGrbbr.appendChild(menuHeaderCrtr);
 
-    resDescCrtr.id = "resDesc";
-    paraResDescCrtr.textContent = "Here at Ghalta's we understand hunger, we always have. You want a fresh patty, crisp onions, juicy tomatoes...cut about |\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0| that thick right? But most importantly, we know, the ONIONS DON'T TOUCH THE TOMATOES.";
+    for (let i = 0; i < 5; i++){
+      menuArrCrtr.push(document.createElement('div'));
+      contentGrbbr.appendChild(menuArrCrtr[i]).classList = "menuItems";
+    }
 
-    contentGrbbr.appendChild(resHeaderCrtr);
-    contentGrbbr.appendChild(heroImgCrtr);
-    contentGrbbr.appendChild(resDescCrtr);
-    resDescCrtr.appendChild(paraResDescCrtr);
+    const menuItemGrbbr = document.querySelectorAll(".menuItems");
+    menuItemGrbbr.forEach( e => {
+      e.appendChild(document.createElement('p'));
+      e.appendChild(document.createElement('img')); 
+    });
+
+
+    menuArrCrtr[0].children[0].innerText = "Prepare to embark on a prehistoric culinary adventure with our Ancient Brontodon Steak. This indulgent dish pays homage to the colossal size and strength of the mighty brontodon, bringing a taste of the ancient world to your plate.";
+    menuArrCrtr[0].children[1].src = "/home/joe/repos/restaurant-page/src/ancient-brontodon.jpg";
+
+    console.log(menuArrCrtr[1].children[1]);
   }
 
