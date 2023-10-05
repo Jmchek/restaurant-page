@@ -5,6 +5,8 @@ export default function loadMe() {
     const resDescCrtr = document.createElement('div');
     const paraResDescCrtr = document.createElement('p');
 
+    contentGrbbr.classList.add('.firstPageStyle');
+
     resHeaderCrtr.id = "resHeader";
     resHeaderCrtr.innerText = "Ghalta's Primal Hunger";
 
