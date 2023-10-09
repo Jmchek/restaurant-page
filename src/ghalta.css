@@ -11,12 +11,14 @@ body {
     background-color: rgb(172, 172, 172);
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 
-    
+    gap: 20px;
     margin: 0;
     height: 100vh;
     width: 100vw;
+
+    grid-template-rows: 50px 1fr;
 }
 
 #content {
@@ -33,13 +35,33 @@ body {
     border-radius: 40px;
 }
 
+.tab {
+    display: grid;
+    height: 100%;
+    width: 100%;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tabGroup {
+    width: 100%;
+    font-size: 2rem;
+    background-color: antiquewhite;
+}
+
+.tabGroup:hover {
+    cursor: pointer;
+    background-color: rgb(218, 205, 189);
+}
+
+/* Tab 1 */
 .firstPageStyle {
     grid-template-rows: 100px 500px 1fr;
     height: 1000px;
 }
 
 .menuStyle {
-    grid-template-rows: repeat(1fr, 5);
+    grid-template-rows: repeat(5, 1fr);
     gap: 20px;
 }
 

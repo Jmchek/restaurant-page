@@ -32,6 +32,10 @@ function openTab(evt, tabName) {
   tabGroupCrtr.appendChild(menuTabCrtr);
   tabGroupCrtr.appendChild(contactTabCrtr);
 
+  homeTabCrtr.innerText = "Home";
+  menuTabCrtr.innerText = "Menu";
+  contactTabCrtr.innerText = "Contact";
+
 
   const tabGroupGrbbr = document.querySelectorAll('.tabGroup');
 
@@ -40,15 +44,17 @@ function openTab(evt, tabName) {
       console.log(index);
       if (index == 0) {
         contentGrabber.innerHTML = "";
+        contentGrabber.classList.remove('.menuStyle');
         loadMe();
       } else if (index == 1) {
         contentGrabber.innerHTML = "";
+        contentGrabber.classList.remove('.firstPageStyle');
         menuTab();
       }
       // add contact page stuff here after
     });
   });
-  
+
   }
 
   openTab();
