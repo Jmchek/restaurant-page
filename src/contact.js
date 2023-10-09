@@ -33,6 +33,6 @@ export default function contactTab() {
 
     //item 3
     menuArrCrtr[2].children[0].children[0].innerText = "Vraska, Golgari Queen";
-    menuArrCrtr[2].children[0].children[1].innerText = "Hostess \n 555-555-5555 \n niceartifact@ixalan.com";
+    menuArrCrtr[2].children[0].children[1].innerText = "Hostess \n 555-555-5555 \n niceperm@ixalan.com";
     menuArrCrtr[2].children[1].src = "/home/joe/repos/restaurant-page/src/Vraska-Scheming-Gorgon-Rivals-of-Ixalan-MtG-Art.png";
 }
