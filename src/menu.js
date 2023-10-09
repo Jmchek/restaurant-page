@@ -3,8 +3,6 @@ export default function menuTab() {
     const menuHeaderCrtr = document.createElement('h2');
     const menuArrCrtr = [];
 
-    contentGrbbr.classList.add(".menuStyle");
-
     menuHeaderCrtr.id = "resHeader";
     menuHeaderCrtr.innerText = "Menu";
 

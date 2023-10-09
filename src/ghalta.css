@@ -55,16 +55,6 @@ body {
 }
 
 /* Tab 1 */
-.firstPageStyle {
-    grid-template-rows: 100px 500px 1fr;
-    height: 1000px;
-}
-
-.menuStyle {
-    grid-template-rows: repeat(5, 1fr);
-    gap: 20px;
-}
-
 #heroImg {
     width: 90%;
     height: 100%;
@@ -94,6 +84,7 @@ body {
     height: 300px;
 
     font-size: 1.3rem;
+    border: .5px black solid;
 }
 
 #resDesc > p {
@@ -101,7 +92,7 @@ body {
 }
 
 
-/* Tab 2 */
+/* Tab 2/3 */
 
 .menuItems {
     display: grid;
@@ -121,6 +112,7 @@ body {
 
     margin: 0;
     border-radius: 5px;
+    border: .5px black solid;
     font-size: 1rem;
 }
 
@@ -141,5 +133,5 @@ body {
     width: 100%;
 
     border-radius: 5px;
-
+    border: .5px black solid;
 }

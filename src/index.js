@@ -2,6 +2,7 @@ import _ from 'lodash';
 import './ghalta.css';
 import loadMe from './page-load.js';
 import menuTab from './menu.js';
+import contactTab from './contact.js';
 
 //home tab
 // loadMe();
@@ -41,20 +42,20 @@ function openTab(evt, tabName) {
 
   tabGroupGrbbr.forEach((e, index) => {
     e.addEventListener('click', f => {
-      console.log(index);
       if (index == 0) {
         contentGrabber.innerHTML = "";
-        contentGrabber.classList.remove('.menuStyle');
         loadMe();
       } else if (index == 1) {
         contentGrabber.innerHTML = "";
-        contentGrabber.classList.remove('.firstPageStyle');
         menuTab();
+      } else if (index == 2) {
+        contentGrabber.innerHTML = "";
+        contactTab();
       }
-      // add contact page stuff here after
     });
   });
 
   }
-
+  
+  loadMe();
   openTab();
