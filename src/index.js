@@ -7,26 +7,48 @@ import menuTab from './menu.js';
 // loadMe();
 
 //menu tab
-menuTab();
+//menuTab();
 
 //tab logic
 function openTab(evt, tabName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
+//function creates and adds the 3 tab buttons
+// add event listeners for each button
+//load associated function when clicked
+
+  const contentGrabber = document.querySelector('#content');
+  const bodyGrbbr = document.querySelector('body');
+  const tabGroupCrtr = document.createElement('div');
+  const homeTabCrtr = document.createElement('button');
+  const menuTabCrtr = document.createElement('button');
+  const contactTabCrtr = document.createElement('button');
+
+  tabGroupCrtr.classList.add("tab");
+  homeTabCrtr.classList.add('tabGroup');
+  menuTabCrtr.classList.add('tabGroup');
+  contactTabCrtr.classList.add('tabGroup');
+
+  bodyGrbbr.insertBefore(tabGroupCrtr, contentGrabber);
+  tabGroupCrtr.appendChild(homeTabCrtr);
+  tabGroupCrtr.appendChild(menuTabCrtr);
+  tabGroupCrtr.appendChild(contactTabCrtr);
+
+
+  const tabGroupGrbbr = document.querySelectorAll('.tabGroup');
+
+  tabGroupGrbbr.forEach((e, index) => {
+    e.addEventListener('click', f => {
+      console.log(index);
+      if (index == 0) {
+        contentGrabber.innerHTML = "";
+        loadMe();
+      } else if (index == 1) {
+        contentGrabber.innerHTML = "";
+        menuTab();
+      }
+      // add contact page stuff here after
+    });
+  });
   
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-  
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-  
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
   }
+
+  openTab();

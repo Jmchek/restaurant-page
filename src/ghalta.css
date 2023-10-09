@@ -26,6 +26,7 @@ body {
     align-items: center;
     justify-items: center;
 
+    padding: 10px;
     gap: 20px;
     width: 700px;
     border: 20px solid black; 
