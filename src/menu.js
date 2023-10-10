@@ -24,7 +24,7 @@ export default function menuTab() {
     //item 1
     menuArrCrtr[0].children[0].children[0].innerText = "Ancient Brontodon Steak";
     menuArrCrtr[0].children[0].children[1].innerText = "Prepare to embark on a prehistoric culinary adventure with our Ancient Brontodon Steak. This indulgent dish pays homage to the colossal size and strength of the mighty brontodon, bringing a taste of the ancient world to your plate.";
-    menuArrCrtr[0].children[1].src = "src/ancient-brontodon.jpg";
+    menuArrCrtr[0].children[1].src = "src/images/ancient-brontodon.jpg";
 
     //item 2
     menuArrCrtr[1].children[0].children[0].innerText = "Goring Ceratops Feast";
@@ -34,7 +34,7 @@ export default function menuTab() {
     //item 3
     menuArrCrtr[2].children[0].children[0].innerText = "Skittering Heartstopper Salad";
     menuArrCrtr[2].children[0].children[1].innerText = "Experience a culinary adventure that captures the essence of excitement and danger with our Skittering Heartstopper Salad. This extraordinary dish takes inspiration from the stealthy and deadly Insect creature, offering a unique and flavorful dining experience.";
-    menuArrCrtr[2].children[1].src = "src/Skittering-Heartstopperjpg";
+    menuArrCrtr[2].children[1].src = "src/Skittering-Heartstopper.jpg";
 
     //item 4
     menuArrCrtr[3].children[0].children[0].innerText = "Sun-Crowned Hunters Flame-Grilled Chicken";

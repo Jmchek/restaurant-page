@@ -4,17 +4,7 @@ import loadMe from './page-load.js';
 import menuTab from './menu.js';
 import contactTab from './contact.js';
 
-//home tab
-// loadMe();
-
-//menu tab
-//menuTab();
-
-//tab logic
-function openTab(evt, tabName) {
-//function creates and adds the 3 tab buttons
-// add event listeners for each button
-//load associated function when clicked
+function openTab() {
 
   const contentGrabber = document.querySelector('#content');
   const bodyGrbbr = document.querySelector('body');

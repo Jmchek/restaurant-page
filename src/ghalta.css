@@ -1,6 +1,6 @@
 @font-face {
     font-family: Beleren;
-    src: url(src/typeface-beleren-bold-master/Beleren2016-Bold.woff) format('woff2');
+    src: url(./typeface-beleren-bold-master/Beleren2016-Bold.woff) format('woff');
   }
 
 * {
@@ -62,7 +62,7 @@ body {
 }
 
 #resHeader {
-    background-image: url("src/stockvault-subtle-green-grunge-background237994.jpg");
+    background-image: url("./stockvault-subtle-green-grunge-background237994.jpg");
     border: .5px black solid;
     border-radius: 15px;
     font-size: 3rem;
@@ -75,7 +75,7 @@ body {
 }
 
 #resDesc {
-    background-image: url("src/stockvault-subtle-green-grunge-background237994.jpg");
+    background-image: url("./stockvault-subtle-green-grunge-background237994.jpg");
     display: flex;
 
     align-items: center;
@@ -103,7 +103,7 @@ body {
 }
 
 .menuItems > div {
-    background-image: url("src/stockvault-subtle-green-grunge-background237994.jpg");
+    background-image: url("./stockvault-subtle-green-grunge-background237994.jpg");
     height: 100%;
     width: 100%;
     display: grid;
@@ -128,7 +128,7 @@ body {
 }
 
 .menuItems > img {
-    background-image: url("src/stockvault-subtle-green-grunge-background237994.jpg");
+    background-image: url("./stockvault-subtle-green-grunge-background237994.jpg");
     height: 100%;
     width: 100%;
 

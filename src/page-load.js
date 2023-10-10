@@ -1,3 +1,5 @@
+import Ghalta from './/images/Ghalta.jpg';
+
 export default function loadMe() {
     const contentGrbbr = document.querySelector('#content');
     const resHeaderCrtr = document.createElement('h2');
